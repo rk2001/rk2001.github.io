@@ -54,7 +54,7 @@
         padding: 20px;
         position: relative;
       }
-      .tem .txt:before {
+      .item .txt::before {
         content: " ";
         position: absolute;
         width: 0;
@@ -62,8 +62,8 @@
         left: 0;
         top: 0;
         border-top: 50px solid transparent;
-        border-right: 184px solid #fff;
-        border-left: 184px solid #fff;
+        border-right: 184px solid rgb(240, 36, 36);
+        border-left: 184px solid rgb(212, 35, 35);
         transform: translateY(-100%);
       }
       .item:hover {
@@ -72,7 +72,7 @@
       .item:hover .txt {
         background-image: linear-gradient(0deg, #fb8076, #feb85d);
       }
-      .item:hover .item .txt:before {
+      .item:hover .item .txt::before {
         border-right: 184px solid #feb85d;
         border-left: 184px solid #feb85d;
       }
